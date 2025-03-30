@@ -1,6 +1,5 @@
 import java.util.HashMap;
 
-import static jdk.internal.org.jline.utils.Colors.s;
 
 public class _1859_sort_the_sentence {
     public static void main(String[] args) {

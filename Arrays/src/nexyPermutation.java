@@ -1,6 +1,6 @@
 public class nexyPermutation {
     public static void main(String[] args) {
-        int[] nums;
+        int[] nums = {3,3,1,4,2,2};
         int index = -1;
         int n = nums.length;
         for(int i = n-2; i >=0; i--){
