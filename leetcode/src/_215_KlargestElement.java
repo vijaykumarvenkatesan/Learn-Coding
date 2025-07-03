@@ -11,13 +11,13 @@ public class _215_KlargestElement {
         // without using sort by using the priorityqueque(heap)
 
         PriorityQueue<Integer> topEl = new PriorityQueue<>(Comparator.reverseOrder());
-        int[] nums;
+        int[] nums = new int[10];
         for(int el :nums){
             topEl.add(el);
         }
         int maxEl = 0;
 
-        Object k;
+        int k =3;
         while(k-->0) maxEl = topEl.poll();
 //        return maxEl;
     }

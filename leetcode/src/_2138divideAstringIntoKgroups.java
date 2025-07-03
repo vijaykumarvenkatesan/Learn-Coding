@@ -1,8 +1,8 @@
-public class divideAstringIntoKgroups {
+public class _2138divideAstringIntoKgroups {
     public static void main(String[] args) {
         String s = "abcs";
         int k =3;
-        
+        char fill = 'x';
         int n = s.length()%k!=0? (s.length()/k)+1 : s.length()/k;
         String[] ans = new String[n];
         for(int i=0; i<n;i++){
@@ -18,6 +18,6 @@ public class divideAstringIntoKgroups {
         }
 
 
-        return ans;
+//        return ans;
     }
 }
