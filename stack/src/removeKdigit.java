@@ -1,2 +1,29 @@
-package PACKAGE_NAME;public class removeKdigit {
+import java.util.*;
+
+public class removeKdigit {
+    public static void main(String[] args) {
+        String num = "1234";
+        int k =3;
+        Stack<Character> stack = new Stack<>();
+        for(char digit:num.toCharArray()){
+            while(!stack.isEmpty() && k>0 && stack.peek()>digit){
+                stack.pop();
+                k--;
+            }
+            stack.push(digit);
+        }
+        while(k>0 && !stack.isEmpty()){
+            stack.pop();
+            k--;
+        }
+        StringBuffer sb = new StringBuffer();
+        while(!stack.isEmpty()){
+            sb.append(stack.pop());
+        }
+        sb.reverse();
+        while(sb.length()>0 && sb.charAt(0)=='0'){
+            sb.deleteCharAt(0);
+        }
+//        return sb.length()<1?"0":sb.toString();
+    }
 }

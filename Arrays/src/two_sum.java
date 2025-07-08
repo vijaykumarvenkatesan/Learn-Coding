@@ -18,15 +18,15 @@ public class two_sum {
         // This is the better solution for the question
         // The brut will be the n2 using the two for loop comapring the two
         int[] nums = new int[8];
-        int targrt=2;
+        int target=2;
         HashMap <Integer, Integer> map = new HashMap<>();
         for(int i =0 ;i<nums.length; i++){
             int x = target - nums[i];
             if(map.containsKey(x)){
-                return new int[]{map.get(x),i};
+//                return new int[]{map.get(x),i};
             }
             map.put(nums[i],i);
         }
-        return null;
+//        return null;
     }
 }
